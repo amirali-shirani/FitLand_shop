@@ -8,7 +8,7 @@ export const metadata = {
 export default function RootLayout({children}) {
     return (
         <html lang="fa-IR" dir="rtl">
-        <body>
+        <body className="text">
         {children}
         </body>
         </html>
