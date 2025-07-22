@@ -1,4 +1,4 @@
-import Navbar from "@/app/(components)/Navbar";
+import Navbar from "@/components/shared/Navbar/Navbar";
 
 const App = () => {
     return (<>
