@@ -1,6 +1,6 @@
 import {CiSearch} from "react-icons/ci";
 
-const SearchBar = ({className}) => (
+const SearchBar = ({className}: {className? : string}) => (
     <div className={`relative ${className}`}>
         <input
             type="text"

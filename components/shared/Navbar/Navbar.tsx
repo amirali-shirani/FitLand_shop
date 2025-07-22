@@ -3,7 +3,7 @@ import {useState} from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {MdMenu} from "react-icons/md";
-import {MobileMenu, NavActions, SearchBar, TopBanner} from "@/components/shared/Navbar/index";
+import {Header, MobileMenu, NavActions, SearchBar, TopBanner} from "./index";
 
 
 const Navbar = () => {
@@ -36,6 +36,10 @@ const Navbar = () => {
             </header>
 
             <MobileMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)}/>
+            <div className="text-center flex justify-center">
+                <SearchBar className="lg:hidden flex-1 max-w-xl mx-8 "/>
+            </div>
+            <Header/>
         </>
     );
 };

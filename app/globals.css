@@ -1,18 +1,18 @@
 @import "tailwindcss";
 
 @theme {
-    --color-texts: #000306;
-    --color-free-send: #032340;
-    --color-orange: #FA541C
+  --color-texts: #000306;
+  --color-free-send: #032340;
+  --color-orange: #FA541C
 }
 
 
-@layer components {
-    .container {
-        @apply px-6 sm:px-10 lg:px-20 xl:px-24;
-    }
-}
+/*@layer components {*/
+/*  .container {*/
+/*    @apply px-6 sm:px-10 lg:px-28 xl:px-32;*/
+/*  }*/
+/*}*/
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }

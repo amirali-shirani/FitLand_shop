@@ -1,10 +1,16 @@
+"use client"
 import {useEffect} from 'react';
 import Link from 'next/link';
 import {MdClose} from 'react-icons/md';
 import {IoBasketSharp, IoPersonOutline} from 'react-icons/io5';
-import {SearchBar} from "@/components/shared/Navbar/index";
+import {SearchBar} from "./index";
 
-const MobileMenu = ({isOpen, onClose}) => {
+type MobileMenuProps =  {
+    isOpen: boolean;
+    onClose: () => void;
+};
+
+const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
     useEffect(() => {
         document.body.style.overflow = isOpen ? 'hidden' : 'auto';
         return () => {
