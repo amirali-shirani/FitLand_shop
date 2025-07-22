@@ -6,7 +6,7 @@ type HeaderProps = {
     link: string,
 }
 
-const HeadLink = ({title, link}: HeaderProps) => {
+const MenuLink = ({title, link}: HeaderProps) => {
     return (
         <Link href={link}>
             <h6 className=" lg:text-lg hover:scale-110 duration-300 text-sm">
@@ -16,4 +16,4 @@ const HeadLink = ({title, link}: HeaderProps) => {
     );
 };
 
-export default HeadLink;
+export default MenuLink;

@@ -8,7 +8,7 @@ type HeaderProps = {
     icon: React.ReactNode;
 }
 
-const HeaderFeatures = ({title, icon, link}: HeaderProps) => {
+const MenuFeatures = ({title, icon, link}: HeaderProps) => {
     return (
         <Link href={link} className="flex items-center gap-1 hover:scale-110 duration-300">
             <span className="text-xl text-orange">{icon}</span>
@@ -17,4 +17,4 @@ const HeaderFeatures = ({title, icon, link}: HeaderProps) => {
     );
 };
 
-export default HeaderFeatures;
+export default MenuFeatures;

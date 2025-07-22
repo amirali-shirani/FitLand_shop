@@ -3,7 +3,7 @@ import {useState} from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {MdMenu} from "react-icons/md";
-import {Header, MobileMenu, NavActions, SearchBar, TopBanner} from "./index";
+import {MainMenu, MobileMenu, NavActions, SearchBar, TopBanner} from "./index";
 
 
 const Navbar = () => {
@@ -39,7 +39,7 @@ const Navbar = () => {
             <div className="text-center flex justify-center">
                 <SearchBar className="lg:hidden flex-1 max-w-xl mx-8 "/>
             </div>
-            <Header/>
+            <MainMenu/>
         </>
     );
 };
