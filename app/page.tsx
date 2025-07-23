@@ -1,8 +1,9 @@
-import {Navbar} from "@/components/shared/Navbar";
+import {HeroSection, Navbar} from "@/components";
 
 const App = () => {
     return (<>
         <Navbar/>
+        <HeroSection/>
     </>);
 };
 

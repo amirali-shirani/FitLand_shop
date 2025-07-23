@@ -11,7 +11,7 @@ type HeaderProps = {
 const MenuFeatures = ({title, icon, link}: HeaderProps) => {
     return (
         <Link href={link} className="flex items-center gap-1 hover:scale-110 duration-300">
-            <span className="text-xl text-orange">{icon}</span>
+            <span className="text-xl text-primary">{icon}</span>
             <h6 className="lg:text-lg text-sm">{title}</h6>
         </Link>
     );

@@ -11,7 +11,7 @@ const NavActions = () => (
             </button>
         </Link>
         <button
-            className="bg-orange text-white size-12 flex justify-center items-center text-3xl rounded-lg hover:opacity-90 transition-opacity">
+            className="bg-primary text-white size-12 flex justify-center items-center text-3xl rounded-lg hover:opacity-90 transition-opacity">
             <IoBasketSharp/>
         </button>
     </div>

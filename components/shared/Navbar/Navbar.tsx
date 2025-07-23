@@ -13,7 +13,7 @@ const Navbar = () => {
         <>
             <TopBanner/>
 
-            <header className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <header className="container mx-auto">
                 <div className="flex justify-between items-center h-20">
                     <div className="flex-shrink-0">
                         <Link href="/" className="flex flex-col items-start">

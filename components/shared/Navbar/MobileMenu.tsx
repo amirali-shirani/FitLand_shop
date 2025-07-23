@@ -45,7 +45,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
                             </button>
                         </Link>
                         <button
-                            className="w-full bg-orange text-white py-3 flex justify-center items-center gap-2 text-xl rounded-lg">
+                            className="w-full bg-primary text-white py-3 flex justify-center items-center gap-2 text-xl rounded-lg">
                             <IoBasketSharp className="text-2xl"/>
                             <span>سبد خرید</span>
                         </button>
