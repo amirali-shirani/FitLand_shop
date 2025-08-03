@@ -1,11 +1,11 @@
-import {HeroSection, Navbar} from "@/components";
-import OfferSection from "@/components/shared/Home/Offers/OfferSection";
+import {Banner, HeroSection, Navbar, OfferSection} from "@/components";
 
 const App = () => {
     return (<>
         <Navbar/>
         <HeroSection/>
         <OfferSection/>
+        <Banner/>
     </>);
 };
 

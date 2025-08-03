@@ -12,8 +12,8 @@ type ButtonProps = {
 const Button = ({className, link, children, onClick}: ButtonProps) => {
     return (
         <Link href={link} className="">
-            <button onClick={onClick} className={`${className} bg-secondary px-3 py-2 flex justify-
-             items-center gap-2 hover:scale-110 transition duration-250 ease-in-out
+            <button onClick={onClick} className={`${className} bg-secondary px-3 py-2 flex items-center
+             gap-2 hover:scale-110  duration-300 ease-in-out transition-transform
              text-base rounded-xl shadow text-white `}>
             <span> <FaRegArrowAltCircleLeft/></span>
                 {children}
