@@ -1,4 +1,4 @@
-import {Banner, HeroSection, Navbar, OfferSection} from "@/components";
+import {Banner, HeroSection, LatestShoes, Navbar, OfferSection, SpecialOffers} from "@/components";
 
 const App = () => {
     return (<>
@@ -6,6 +6,8 @@ const App = () => {
         <HeroSection/>
         <OfferSection/>
         <Banner/>
+        <SpecialOffers/>
+        <LatestShoes/>
     </>);
 };
 

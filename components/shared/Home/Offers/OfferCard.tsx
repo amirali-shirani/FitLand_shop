@@ -23,12 +23,12 @@ const OfferCard = ({brand, image}: OfferCardProps) => {
             <Image
                 src={image}
                 alt="تخفیفات فصل"
-                layout="fill"
-                objectFit="cover"
-                className="transition-transform duration-500 group-hover:scale-110"
+                fill
+                className="transition-transform object-cover object-top    duration-500 group-hover:scale-110"
             />
 
-            <div className="absolute bottom-0 left-0 w-full z-10 transition-opacity duration-300 group-hover:opacity-0">
+            <div className="absolute bottom-0 h-24 lg:h-32 left-0 w-full z-10
+             transition-opacity duration-300 group-hover:opacity-0">
                 <Image
                     src="/assets/images/offer-card.svg"
                     alt=""
@@ -44,8 +44,6 @@ const OfferCard = ({brand, image}: OfferCardProps) => {
                     </h3>
                 </div>
             </div>
-
-
             <div
                 className="absolute inset-0 z-20 bg-black/50 backdrop-blur-md
                            flex flex-col justify-center items-center text-center p-4

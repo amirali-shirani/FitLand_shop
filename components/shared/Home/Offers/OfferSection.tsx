@@ -25,9 +25,8 @@ const OfferSection = () => {
             />
 
             <div className="container mx-auto px-4">
-
                 <div
-                    className="flex flex-col lg:flex-row lg:items-stretch items-center justify-center gap-10 xl:gap-16">
+                    className="flex flex-col md:flex-row lg:items-stretch items-center justify-center gap-10 xl:gap-16">
                     {offersData.map((offer, index) => (
                         <OfferCard key={index} image={offer.image} brand={offer.brand}/>
                     ))}

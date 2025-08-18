@@ -13,7 +13,7 @@ const HeroSection = () => {
         <>
             <section className="container mt-8 overflow-hidden">
                 <div className="flex justify-between items-center gap-8">
-                    <div className="space-y-5 text-right">
+                    <div className="lg:space-y-5 space-y-2 text-right">
                         <h4 className="text-custom-neutral text-base">راحت و مطمئن خرید کنید!</h4>
                         <h1 className="text-secondary lg:text-3xl text-xl gap-2 flex flex-col font-semibold">
                             <span>همراه تو در مسیر سلامتی</span>

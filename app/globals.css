@@ -25,11 +25,7 @@ button {
     cursor: pointer;
 }
 
-.clip-custom {
-    /*88% 0, 100% 26%, 100% 100%, 0 100%, 1% 47%*/
-    /*clip-path: polygon(88% 0, 100% 26%, 100% 100%, 0 100%, 1% 47%);*/
-    /*shape-outside: ellipse(40% 50% at right);*/
+.offer__poly {
+    clip-path: polygon(0 0, 36% 0, 42% 7%, 60% 6%, 65% 0, 100% 0, 100% 100%, 1% 100%);
 
-    /*clip-path: ellipse(10px 20px at 88% 0,10px 10px at 100% 26%, 10px 10px at 100% 100%,10px 10px at 0 100%,10px 10px at 1% 47%);*/
-    /*clip-path: ellipse(130px 140px at 10% 20%);*/
 }
