@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import {specialOffers} from "@/lib/data";
+import {bicycles} from "@/lib/data";
 import SpecialOfferCard from "@/components/shared/Home/SpecialOffers/SpecialOfferCard";
 
 import {Swiper, SwiperSlide} from 'swiper/react';
@@ -11,11 +11,11 @@ import 'swiper/css/pagination';
 import SeeAllProducts from "../SeeAllProducts";
 
 
-const SpecialOffers = () => {
+const Bicycles = () => {
     return (
         <section className="mt-20 w-full">
             <h1 className="lg:text-3xl text-xl font-bold text-center translate-y-8 z-20">تخفیفات ویژه</h1>
-            <div className="lg:py-16 py-8 z-10 offer__poly lg:bg-[#FFF7F4]">
+            <div className="lg:py-16 py-8 z-10 offer__poly lg:bg-[#F4FAFF]">
                 <SeeAllProducts link="/products"/>
                 <Swiper
                     modules={[Navigation, Pagination]}
@@ -34,7 +34,7 @@ const SpecialOffers = () => {
                     }}
                     className="w-[90%] mx-auto"
                 >
-                    {specialOffers.map((offer, index) => {
+                    {bicycles.map((offer, index) => {
                         const {title, price, image, sizes, brand, colors, discount} = offer;
                         return (
                             <SwiperSlide key={index}>
@@ -56,4 +56,4 @@ const SpecialOffers = () => {
     );
 };
 
-export default SpecialOffers;
+export default Bicycles;

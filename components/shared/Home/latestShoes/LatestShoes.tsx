@@ -1,14 +1,14 @@
 "use client"
 import React from 'react';
-import { latestShoes } from "@/lib/data";
+import {latestShoes} from "@/lib/data";
 import SpecialOfferCard from "@/components/shared/Home/SpecialOffers/SpecialOfferCard";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
+import {Swiper, SwiperSlide} from 'swiper/react';
+import {Navigation, Pagination} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { FaRegArrowAltCircleLeft } from "react-icons/fa";
+import SeeAllProducts from '../SeeAllProducts';
 
 
 const LatestShoes = () => {
@@ -16,14 +16,15 @@ const LatestShoes = () => {
         <section className="mt-20 w-full">
             <h1 className="lg:text-3xl text-xl font-bold text-center">جدید ترین کفش های ورزشی</h1>
             <div className="lg:py-16 py-8 z-10">
-                <h4 className="text-xl flex justify-end items-center gap-3 px-10"><span><FaRegArrowAltCircleLeft/></span> مشاهده همه </h4>
+                <SeeAllProducts link="/shoes"/>
                 <Swiper
                     modules={[Navigation, Pagination]}
                     navigation
-                    pagination={{ clickable: true }}
+                    pagination={{clickable: true}}
                     spaceBetween={30}
                     loop={true}
-                    breakpoints={{430: {slidesPerView: 2,},
+                    breakpoints={{
+                        430: {slidesPerView: 2,},
                         768: {
                             slidesPerView: 2,
                         },
@@ -34,7 +35,7 @@ const LatestShoes = () => {
                     className="w-[90%] mx-auto"
                 >
                     {latestShoes.map((offer, index) => {
-                        const { title, price, image, sizes, brand, colors, discount } = offer;
+                        const {title, price, image, sizes, brand, colors, discount} = offer;
                         return (
                             <SwiperSlide key={index}>
                                 <SpecialOfferCard

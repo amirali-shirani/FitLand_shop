@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+import Image, {StaticImageData} from 'next/image';
 
 // آیکون لایه‌ها
 const LayersIcon = () => (
@@ -12,7 +12,7 @@ const LayersIcon = () => (
 
 type OfferCardProps = {
     brand: string;
-    image: string;
+    image: string | StaticImageData;
 }
 
 const OfferCard = ({brand, image}: OfferCardProps) => {
