@@ -6,7 +6,9 @@ import {
     LatestShoes,
     Navbar,
     OfferSection,
-    SpecialOffers
+    SiteInfo,
+    SpecialOffers,
+    LatestNews
 } from "@/components/shared/Home";
 import BannerHome from '@/public/assets/images/home/banner.png';
 import BannerHome2 from '@/public/assets/images/home/banner2.jpg';
@@ -28,6 +30,8 @@ const App = () => {
             <OfferSection title="پر فروش ترین محصولات" desc="پرفروش ترین محصولات با ارسال رایگان تهیه
 کنید و در سریع ترین زمان درب منزل تحویل بگیرید." link="/most-products" data={secondOffersData}/>
             <CampBanner/>
+            <LatestNews/>
+            <SiteInfo/>
         </>
     );
 };

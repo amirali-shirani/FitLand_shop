@@ -30,7 +30,7 @@ const OfferCard = ({brand, image}: OfferCardProps) => {
             <div className="absolute bottom-0 h-24 lg:h-32 left-0 w-full z-10
              transition-opacity duration-300 group-hover:opacity-0">
                 <Image
-                    src="/assets/images/offers/offer-card.svg"
+                    src="/assets/images/home/offers/offer-card.svg"
                     alt=""
                     width={392}
                     height={160}
