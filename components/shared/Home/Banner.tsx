@@ -15,17 +15,18 @@ const Banner = ({image , title , subTitle , link} : Props ) => {
             <div>
                 <Image
                     src={image}
-                    className="object-cover w-full lg:h-[750px] h-[175px]"
+                    className="object-cover object-top w-full lg:h-[750px] h-[175px]"
                     alt="Banner"
                 />
             </div>
 
-            <div className="absolute top-1/3 right-20 -translate-y-1/2 text-right">
-                <h2 className="lg:text-2xl text-xs">
-                    {title} <br/>
-                    <span className="font-bold mt-2">{subTitle}</span>
+            <div className="absolute top-1/4 right-5 lg:top-1/3 lg:right-20 text-right
+            lg:text-3xl text-[10px] lg:space-y-3">
+                <h2 className="">
+                    {title}
                 </h2>
-                <Button link={link} className="mt-4">
+                <h2 className="font-bold">{subTitle}</h2>
+                <Button link={link} className="lg:mt-4 hidden">
                     مشاهده همه محصولات
                 </Button>
             </div>

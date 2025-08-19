@@ -3,10 +3,10 @@
 import React from 'react';
 import {Button} from '../../UI';
 import Image from "next/image";
-import ManHero from "@/public/assets/images/man-hero.svg";
+import ManHero from "@/public/assets/images/home/man-hero.svg";
 import {heroInfos} from "@/lib/data";
 import HeroInfo from "@/components/shared/Home/Hero/HeroInfo";
-import HeroLayer from "@/public/assets/images/hero-layer.svg";
+import HeroLayer from "@/public/assets/images/home/hero-layer.svg";
 
 const HeroSection = () => {
     return (

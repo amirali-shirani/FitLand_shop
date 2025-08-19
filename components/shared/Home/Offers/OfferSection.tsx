@@ -2,7 +2,7 @@ import React from 'react';
 import Image, {StaticImageData} from 'next/image';
 import OfferCard from "@/components/shared/Home/Offers/OfferCard";
 import {Button} from "@/components/shared/UI";
-import layer from "@/public/assets/images/offer-layer.svg";
+import layer from "@/public/assets/images/offers/offer-layer.svg";
 
 type Offer = {
     image: StaticImageData | string;
