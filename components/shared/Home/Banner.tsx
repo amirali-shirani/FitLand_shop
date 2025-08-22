@@ -26,7 +26,7 @@ const Banner = ({image , title , subTitle , link} : Props ) => {
                     {title}
                 </h2>
                 <h2 className="font-bold">{subTitle}</h2>
-                <Button link={link} className="lg:mt-4 hidden">
+                <Button link={link} className="lg:mt-4 hidden lg:flex">
                     مشاهده همه محصولات
                 </Button>
             </div>

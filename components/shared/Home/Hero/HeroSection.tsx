@@ -11,7 +11,7 @@ import HeroLayer from "@/public/assets/images/home/hero-layer.svg";
 const HeroSection = () => {
     return (
         <>
-            <section className="container mt-8 overflow-hidden">
+            <section className="container mx-auto mt-8 ">
                 <div className="flex justify-between items-center gap-8">
                     <div className="lg:space-y-5 space-y-2 text-right">
                         <h4 className="text-custom-neutral text-base">راحت و مطمئن خرید کنید!</h4>
@@ -23,7 +23,7 @@ const HeroSection = () => {
                             بزرگترین حراج فصل فیت لند همین حالا شروع کن و محصولات با یه تخفیف شگفت انگیز بخر!
                         </p>
                         <div className="flex justify-start">
-                            <Button link="/">مشاهده محصولات</Button>
+                            <Button>مشاهده محصولات</Button>
                         </div>
                     </div>
                     <div className="z-20 order-none">
