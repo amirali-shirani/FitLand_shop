@@ -13,6 +13,7 @@ import {
 import BannerHome from '@/public/assets/images/home/banner.png';
 import BannerHome2 from '@/public/assets/images/home/banner2.jpg';
 import {offersData, secondOffersData} from "@/lib/data";
+import Footer from "@/components/shared/Footer/Footer";
 
 const App = () => {
     return (<>
@@ -32,6 +33,7 @@ const App = () => {
             <CampBanner/>
             <LatestNews/>
             <SiteInfo/>
+            <Footer/>
         </>
     );
 };

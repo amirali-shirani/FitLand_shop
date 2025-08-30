@@ -27,7 +27,7 @@ const NewsCard = ({
                 <h2 className="text-base lg:text-2xl font-bold">{title}</h2>
                 <p className="font-semibold">{description}</p>
                 <Link href={link}>
-                    <Button link={link} className="!bg-primary">مشاهده اخیر</Button>
+                    <Button className="!bg-primary">مشاهده اخیر</Button>
                 </Link>
             </div>
         </div>
