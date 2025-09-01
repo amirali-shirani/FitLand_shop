@@ -20,8 +20,8 @@ const NewsCard = ({
     return (
         <div className="rounded-lg border border-gray-300 space-y-4">
             <Link href={link}>
-                <Image width={307} height={564} src={image} alt={title}
-                       className="hover:scale-105 transition-transform object-cover w-full"/>
+                <Image src={image} alt={title}
+                       className="hover:scale-105 w-20 h-20 transition-transform object-cover "/>
             </Link>
             <div className="p-3 space-y-4">
                 <h2 className="text-base lg:text-2xl font-bold">{title}</h2>

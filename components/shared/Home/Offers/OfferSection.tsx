@@ -43,7 +43,7 @@ const OfferSection = ({title, data, desc, link}: Props) => {
                         <p className="text-custom-neutral leading-relaxed w-11/12">
                             {desc}
                         </p>
-                        <Button link={link} className="px-10 !bg-primary hover:bg-primary-dark transition-colors">
+                        <Button className="px-10 !bg-primary hover:bg-primary-dark transition-colors">
                             مشاهده همه محصولات
                         </Button>
                     </div>

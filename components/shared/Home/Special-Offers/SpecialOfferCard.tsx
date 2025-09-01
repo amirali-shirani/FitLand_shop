@@ -10,15 +10,16 @@ type cardProps = {
     brand: string;
     colors: string[];
     discount: number | string;
+    className?: string;
 }
 
 
 const SpecialOfferCard = ({
                               title, price, image, sizes, brand
-                              , colors, discount
+                              , colors, discount ,className
                           }: cardProps) => {
     return (
-        <div className="relative mt-10 border border-gray-400 rounded-xl ">
+        <div className={`relative mt-10 rounded-xl ${className}`}>
             <div className={`absolute top-2.5  left-11 h-10 w-10 text-sm flex items-center justify-center rounded-full ${discount === "VIP" ? "bg-primary" :
                 "bg-[#67AAE6]"}`}>{discount === "VIP" ? discount : `${discount}%`}</div>
             <Link href="/">

@@ -1,10 +1,10 @@
 import React from 'react';
 import {siteInfo} from "@/lib/data";
-import InfoCard from "@/components/shared/Home/site-info/InfoCard";
+import InfoCard from "@/components/shared/Home/Site-Info/InfoCard";
 
 const SiteInfo = () => {
     return (
-        <section className="px-52 flex justify-center mt-20">
+        <section className="px-52 flex justify-center lg:mt-20 mt-10">
             <div className=" gap-12 p-4 flex  items-center justify-between">
                 <div className="flex gap-8">
                     {siteInfo.map((info, index) => (

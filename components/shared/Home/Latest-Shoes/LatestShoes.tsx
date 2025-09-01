@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
 import {latestShoes} from "@/lib/data";
-import SpecialOfferCard from "@/components/shared/Home/SpecialOffers/SpecialOfferCard";
+import SpecialOfferCard from "@/components/shared/Home/Special-Offers/SpecialOfferCard";
 
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Navigation, Pagination} from 'swiper/modules';
@@ -13,7 +13,7 @@ import SeeAllProducts from '../SeeAllProducts';
 
 const LatestShoes = () => {
     return (
-        <section className="mt-16">
+        <section className="lg:mt-16 mt-10">
             <h1 className="lg:text-3xl text-xl font-bold text-center">جدید ترین کفش های ورزشی</h1>
             <div className="py-6 z-10 container">
                 <SeeAllProducts link="/shoes"/>
@@ -38,6 +38,7 @@ const LatestShoes = () => {
                         return (
                             <SwiperSlide key={index}>
                                 <SpecialOfferCard
+                                    className="border border-gray-400"
                                     title={title}
                                     price={price}
                                     image={image}

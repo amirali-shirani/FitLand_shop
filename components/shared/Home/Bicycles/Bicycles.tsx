@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
 import {bicycles} from "@/lib/data";
-import SpecialOfferCard from "@/components/shared/Home/SpecialOffers/SpecialOfferCard";
+import SpecialOfferCard from "@/components/shared/Home/Special-Offers/SpecialOfferCard";
 
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Navigation, Pagination} from 'swiper/modules';
