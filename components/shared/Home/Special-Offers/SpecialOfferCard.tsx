@@ -20,7 +20,7 @@ const SpecialOfferCard = ({
                           }: cardProps) => {
     return (
         <div className={`relative mt-10 rounded-xl ${className}`}>
-            <div className={`absolute top-2.5  left-11 h-10 w-10 text-sm flex items-center justify-center rounded-full ${discount === "VIP" ? "bg-primary" :
+            <div className={`absolute top-2.5  left-5 h-10 w-10 text-sm flex items-center justify-center rounded-full ${discount === "VIP" ? "bg-primary" :
                 "bg-[#67AAE6]"}`}>{discount === "VIP" ? discount : `${discount}%`}</div>
             <Link href="/">
                 <Image src={image} alt={title} className="object-cover w-full"/>

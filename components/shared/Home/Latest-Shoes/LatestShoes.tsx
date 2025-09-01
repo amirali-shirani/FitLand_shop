@@ -15,42 +15,45 @@ const LatestShoes = () => {
     return (
         <section className="lg:mt-16 mt-10">
             <h1 className="lg:text-3xl text-xl font-bold text-center">جدید ترین کفش های ورزشی</h1>
-            <div className="py-6 z-10 container">
+            <div className="py-6 z-10 ">
                 <SeeAllProducts link="/shoes"/>
-                <Swiper
-                    modules={[Navigation, Pagination]}
-                    navigation
-                    pagination={{clickable: true}}
-                    spaceBetween={30}
-                    loop={true}
-                    breakpoints={{
-                        430: {slidesPerView: 2,},
-                        768: {
-                            slidesPerView: 2,
-                        },
-                        1024: {
-                            slidesPerView: 3,
-                        }
-                    }}
-                >
-                    {latestShoes.map((offer, index) => {
-                        const {title, price, image, sizes, brand, colors, discount} = offer;
-                        return (
-                            <SwiperSlide key={index}>
-                                <SpecialOfferCard
-                                    className="border border-gray-400"
-                                    title={title}
-                                    price={price}
-                                    image={image}
-                                    sizes={sizes}
-                                    brand={brand}
-                                    colors={colors}
-                                    discount={discount}
-                                />
-                            </SwiperSlide>
-                        );
-                    })}
-                </Swiper>
+                <div className="container mx-auto">
+
+                    <Swiper
+                        modules={[Navigation, Pagination]}
+                        navigation
+                        pagination={{clickable: true}}
+                        spaceBetween={30}
+                        loop={true}
+                        breakpoints={{
+                            430: {slidesPerView: 2,},
+                            768: {
+                                slidesPerView: 2,
+                            },
+                            1024: {
+                                slidesPerView: 3,
+                            }
+                        }}
+                    >
+                        {latestShoes.map((offer, index) => {
+                            const {title, price, image, sizes, brand, colors, discount} = offer;
+                            return (
+                                <SwiperSlide key={index}>
+                                    <SpecialOfferCard
+                                        className="border border-gray-400"
+                                        title={title}
+                                        price={price}
+                                        image={image}
+                                        sizes={sizes}
+                                        brand={brand}
+                                        colors={colors}
+                                        discount={discount}
+                                    />
+                                </SwiperSlide>
+                            );
+                        })}
+                    </Swiper>
+                </div>
             </div>
         </section>
     );
