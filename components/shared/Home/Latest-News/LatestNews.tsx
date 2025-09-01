@@ -12,7 +12,7 @@ const LatestNews = () => {
     return (
         <section className='container mx-auto mt-10'>
             <h1 className="lg:text-3xl text-xl font-bold text-center">جدیدترین ها در اخبار ورزش</h1>
-            <div className=" mt-10">
+            <div className="mt-10">
                 <Swiper
                     modules={[Navigation, Pagination]}
                     navigation
