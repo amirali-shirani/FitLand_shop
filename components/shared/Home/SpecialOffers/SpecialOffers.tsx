@@ -15,8 +15,8 @@ const SpecialOffers = () => {
     return (
         <section className="mt-20 w-full">
             <h1 className="lg:text-3xl text-xl font-bold text-center translate-y-8 z-20">تخفیفات ویژه</h1>
-            <div className="lg:py-16 py-8 z-10 offer__poly lg:bg-[#FFF7F4]">
-                <SeeAllProducts link="/products"/>
+            <div className="py-10 z-10 container offer__poly lg:bg-[#FFF7F4]">
+                   <SeeAllProducts link="/products"/>
                 <Swiper
                     modules={[Navigation, Pagination]}
                     navigation

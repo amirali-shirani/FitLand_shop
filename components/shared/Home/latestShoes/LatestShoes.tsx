@@ -13,9 +13,9 @@ import SeeAllProducts from '../SeeAllProducts';
 
 const LatestShoes = () => {
     return (
-        <section className="mt-20 w-full">
+        <section className="mt-16">
             <h1 className="lg:text-3xl text-xl font-bold text-center">جدید ترین کفش های ورزشی</h1>
-            <div className="lg:py-16 py-8 z-10">
+            <div className="py-6 z-10 container">
                 <SeeAllProducts link="/shoes"/>
                 <Swiper
                     modules={[Navigation, Pagination]}
@@ -32,7 +32,6 @@ const LatestShoes = () => {
                             slidesPerView: 3,
                         }
                     }}
-                    className="w-[90%] mx-auto"
                 >
                     {latestShoes.map((offer, index) => {
                         const {title, price, image, sizes, brand, colors, discount} = offer;

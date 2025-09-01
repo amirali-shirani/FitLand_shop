@@ -4,7 +4,7 @@ import {FaRegArrowAltCircleLeft} from "react-icons/fa";
 
 const SeeAllProducts = ({link}: { link: string }) => {
     return (
-        <Link href={link} className="lg:block hidden">
+        <Link href={link} className="lg:block hidden px-12">
             <h4 className="text-xl flex justify-end items-center gap-3 lg:px-10 px-5">
                 <span><FaRegArrowAltCircleLeft/></span> مشاهده همه </h4>
         </Link>
