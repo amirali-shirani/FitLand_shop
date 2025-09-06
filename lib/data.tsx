@@ -193,3 +193,30 @@ export const siteInfo = [
     {title : "پرداخت قسطی" , icon : <FaPaypal/>},
     {title : "ارسال سریع" , icon : <FaTruck/>},
 ]
+
+export const footerLinks = [
+    {title : "محبوب ‌ترین‌ها" , subTitles : [
+            {title : "لباس مردانه" , link : "/men"},
+            {title : "کفش فوتبال" , link : "/soccer-shoes"},
+            {title : "دوچرخه" , link : "/bicycles"},
+            {title : "لباس زنانه" , link : "/women"}
+        ]},
+    {title : "خدمات مشتریان" , subTitles : [
+            {title : "سوالات متداول" , link : "/faqs"},
+            {title : "حریم خصوصی" , link : "/privacy"},
+            {title : "گزارش ایراد در سایت" , link : "/"},
+            {title : "شرایط بازگرداندن محصول" , link : "/"}
+        ]},
+    {title : "راهنمای خرید" , subTitles : [
+            {title : "راهنمای ثبت سفارش" , link : "/conditions"},
+            {title : "شیوه های پرداخت" , link : "/payment-methods"},
+            {title : "نحوه ارسال سفارش ها" , link : "/send"},
+            {title : "نحوه پیگیری محصول" , link : "/"}
+        ]},
+    {title : "اطلاعات تماس  " , subTitles : [
+            {title : "نشانی  تهران - تجریش - خیابان سالور"} ,
+            {title : "شماره تماس"  , subtitle : "3456789-021" },
+            {title : "پست الکترونیک" , subtitle : "info@fitland.com" },
+            {title : "ساعت کاری  شنبه تا چهارشنبه 9 تا 17"}
+        ]},
+]
