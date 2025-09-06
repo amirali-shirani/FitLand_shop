@@ -1,10 +1,6 @@
-// src/components/shared/Footer/Footer.jsx
-
 import React from 'react';
-import Link from 'next/link';
 import {footerLinks} from "@/lib/data";
 import FooterCol from "@/components/shared/Footer/FooterCol";
-import {FaInstagram, FaTelegramPlane, FaWhatsapp, FaYoutube} from "react-icons/fa";
 import FooterContactUs from "@/components/shared/Footer/FooterContactUs";
 
 const Footer = () => {
@@ -23,13 +19,13 @@ const Footer = () => {
                 </div>
 
                 <div className="lg:col-span-2 lg:col-start-5 flex flex-col">
-                   <FooterContactUs/>
+                    <FooterContactUs/>
                 </div>
             </div>
 
-            <div className="container mx-auto mt-12 pt-8 border-t border-gray-700 text-center text-gray-400">
-                <p>&copy; ۲۰۲۵ - تمامی حقوق برای فروشگاه فیت‌لند محفوظ است.</p>
-            </div>
+            {/*<div className="container mx-auto mt-12 pt-8 border-t border-gray-700 text-center text-gray-400">*/}
+            {/*    <p>&copy; ۲۰۲۵ - تمامی حقوق برای فروشگاه فیت‌لند محفوظ است.</p>*/}
+            {/*</div>*/}
         </footer>
     );
 };

@@ -7,15 +7,15 @@ const FooterContactUs = () => {
         <div className="">
             <div>
                 <h3 className="font-bold text-lg mb-4">برای دریافت تخفیف های بیشتر ما را دنبال کنید!</h3>
-                <div className="flex items-center gap-5">
+                <div className="flex gap-16 my-7 text-3xl">
                     <Link href="#" aria-label="Instagram"
-                          className="text-2xl hover:text-gray-400 transition-colors"><FaInstagram/></Link>
+                          className="hover:text-gray-400 transition-colors"><FaInstagram/></Link>
                     <Link href="#" aria-label="Telegram"
-                          className="text-2xl hover:text-gray-400 transition-colors"><FaTelegramPlane/></Link>
+                          className="hover:text-gray-400 transition-colors"><FaTelegramPlane/></Link>
                     <Link href="#" aria-label="WhatsApp"
-                          className="text-2xl hover:text-gray-400 transition-colors"><FaWhatsapp/></Link>
+                          className="hover:text-gray-400 transition-colors"><FaWhatsapp/></Link>
                     <Link href="#" aria-label="YouTube"
-                          className="text-2xl hover:text-gray-400 transition-colors"><FaYoutube/></Link>
+                          className="hover:text-gray-400 transition-colors"><FaYoutube/></Link>
                 </div>
             </div>
             <div>
@@ -25,7 +25,7 @@ const FooterContactUs = () => {
                         type="email"
                         placeholder="ایمیل خود را وارد کنید..."
                         className="w-full bg-transparent border border-gray-600 rounded-md py-3 px-4
-                                 text-white placeholder-gray-500 focus:outline-none focus:border-orange-500"
+                                 text-white placeholder-gray-500 focus:outline-none focus:border-primary"
                     />
                     <button
                         type="submit"
