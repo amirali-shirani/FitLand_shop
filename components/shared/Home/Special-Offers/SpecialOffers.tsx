@@ -40,6 +40,7 @@ const SpecialOffers = () => {
                             return (
                                 <SwiperSlide key={index}>
                                     <SpecialOfferCard
+                                        className="bg-white"
                                         title={title}
                                         price={price}
                                         image={image}

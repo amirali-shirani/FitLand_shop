@@ -10,7 +10,6 @@ type FooterColProps = {
 
 const FooterCol = ({title, subtitles}: FooterColProps) => {
     return (
-        <>
             <div>
                 <h3 className="font-semibold mb-4">{title}</h3>
                 <ul className="list-disc space-y-6">
@@ -24,8 +23,6 @@ const FooterCol = ({title, subtitles}: FooterColProps) => {
                     ))}
                 </ul>
             </div>
-        </>
-
     );
 };
 
