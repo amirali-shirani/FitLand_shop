@@ -7,23 +7,30 @@ import FooterCopyRight from "@/components/shared/Footer/FooterCopyRight";
 
 const Footer = () => {
     return (
-        <footer className=" text-white bg-footer-secondary">
-            <div className="container mx-auto py-10 grid grid-cols-1 lg:grid-cols-6 gap-12 lg:gap-10">
-                <div className="lg:col-span-4 grid grid-cols-2 md:grid-cols-4 gap-x-12 gap-y-8">
-                    {footerLinks.map((footerLink, index) => (
-                        <FooterCol
-                            key={index}
-                            title={footerLink.title}
-                            subtitles={footerLink.subTitles}
-                        />
-                    ))}
+        // استفاده از پالت رنگی تیره‌تر برای پس‌زمینه
+        <footer className="bg-gray-800 text-gray-300">
+            <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
+                <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
+                    {/* بخش لینک‌ها با عرض بیشتر */}
+                    <div className="md:col-span-7 grid grid-cols-2 sm:grid-cols-4 gap-8">
+                        {footerLinks.map((footerLink, index) => (
+                            <FooterCol
+                                key={index}
+                                title={footerLink.title}
+                                subtitles={footerLink.subTitles}
+                            />
+                        ))}
+                    </div>
+                    {/* بخش تماس با ما */}
+                    <div className="md:col-span-5">
+                        <FooterContactUs />
+                    </div>
                 </div>
-                <div className="lg:col-span-2 lg:col-start-5 flex flex-col">
-                    <FooterContactUs/>
-                </div>
+                {/* بخش درباره ما با یک خط جداکننده در بالا */}
+                <FooterAboutUs />
             </div>
-            <FooterAboutUs/>
-            <FooterCopyRight/>
+            {/* بخش کپی‌رایت با پس‌زمینه متفاوت برای تمایز */}
+            <FooterCopyRight />
         </footer>
     );
 };

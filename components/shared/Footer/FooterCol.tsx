@@ -8,22 +8,29 @@ type FooterColProps = {
 
 
 
-const FooterCol = ({title, subtitles}: FooterColProps) => {
+const FooterCol = ({ title, subtitles }: FooterColProps) => {
     return (
-            <div>
-                <h3 className="font-semibold mb-4">{title}</h3>
-                <ul className="list-disc space-y-6">
-                    {subtitles.map((sub,index) => (
-                        <div key={index}>
-                            {sub.link ? <Link key={index} href={sub.link} target="_blank" rel="noopener noreferrer">
-                                <li className="text-sm" key={index}>{sub.title}</li>
-                            </Link> : <li className="text-sm text-nowrap" key={index}>{sub.title} <span className="text-primary">{sub.subtitle}</span></li>}
-                        </div>
-
-                    ))}
-                </ul>
-            </div>
+        <div>
+            {/* استایل بهتر برای عنوان ستون */}
+            <h3 className="text-base font-bold text-white mb-5 uppercase tracking-wider">{title}</h3>
+            <ul className="space-y-3">
+                {subtitles.map((sub, index) => (
+                    <li key={index}>
+                        {sub.link ? (
+                            <Link href={sub.link} target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-primary transition-colors duration-300 flex items-center gap-2">
+                                {/* نشانگر دایره‌ای برای لینک‌ها */}
+                                <span className="w-1.5 h-1.5 bg-primary rounded-full"></span>
+                                {sub.title}
+                            </Link>
+                        ) : (
+                            <div className="text-sm text-gray-400">
+                                {sub.title}: <span className="text-white font-medium">{sub.subtitle}</span>
+                            </div>
+                        )}
+                    </li>
+                ))}
+            </ul>
+        </div>
     );
 };
-
 export default FooterCol;
